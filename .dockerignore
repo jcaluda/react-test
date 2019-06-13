@@ -1,0 +1,6 @@
+build
+node_modules
+.git*
+Dockerfile
+docker-compose*
+.env.local

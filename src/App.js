@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import env from "@beam-australia/react-env";
 
 function App() {
   return (
@@ -9,6 +10,12 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <p>
+          Current environment: <b>{env("ENV")}</b>
+        </p>
+        <p>
+          Current URL: <b>{env("URL")}</b>
         </p>
         <a
           className="App-link"
